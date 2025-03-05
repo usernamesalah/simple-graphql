@@ -1,0 +1,15 @@
+schema:
+  - infrastructure/graphql/power_plant.graphql
+
+exec:
+  filename: internal/api/graphql/generated.go
+  package: graphql
+
+model:
+  filename: internal/model/power_plan.go
+  package: model
+
+resolver:
+  layout: follow-schema
+  dir: internal/api/graphql
+  package: graphql
